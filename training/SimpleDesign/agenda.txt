@@ -1,0 +1,21 @@
+•	What is SOLID?
+o	What is pattern?
+o	Show example
+o	Show test
+o	Why is it important?
+•	Clean code
+o	Go over smells Examples
+o	Comments
+o	Expressive Code
+o	KISS
+o	Exception Handling instead of return of Boolean
+?	Provide good error messages
+?	Throw to original caller
+?	Use Runtime Exceptions but still call them out in API
+•	What is difference between unit and functional testing?
+•	What is TDD?
+o	What are the benefits?
+o	How should it work?
+o	What do you need to facilitate TDD.
+o	Go over Mockito
+o	Login example
