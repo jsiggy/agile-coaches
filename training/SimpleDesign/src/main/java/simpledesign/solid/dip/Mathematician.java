@@ -1,4 +1,4 @@
-package simpledesign.solid.dependencyinjection;
+package simpledesign.solid.dip;
 
 import simpledesign.solid.Calculator;
 

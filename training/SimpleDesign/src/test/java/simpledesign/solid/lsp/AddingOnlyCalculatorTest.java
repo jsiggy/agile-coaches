@@ -3,24 +3,23 @@
  *
  * Copyright (c) 2010 Sabre Holdings, Inc. All Rights Reserved.
  */
-package simpledesign.solid.singleresponsibility;
+package simpledesign.solid.lsp;
 
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import simpledesign.solid.Calculator;
 
-import static org.junit.Assert.*;
-
 @RunWith(MockitoJUnitRunner.class)
-public class BasicCalculatorTest {
+public class AddingOnlyCalculatorTest {
 
   private Calculator calculator;
 
   @Before
   public void setUp() throws Exception {
-    calculator = new BasicCalculator();
+    calculator = new AddingOnlyCalculator();
   }
 
   @Test
@@ -30,6 +29,11 @@ public class BasicCalculatorTest {
 
   @Test
   public void subtract() {
-    assertEquals(6, calculator.subtract(8, 2));
+     try{
+        calculator.subtract(8,2);
+        fail("Why would I throw an exception when the contract says subtract is supported.");
+     } catch(RuntimeException e) {
+        assertEquals("Ha, I fooled you...  You thought I would support subtraction, but you're wrong!  Ha, Ha, Ha", e.getMessage());
+     }
   }
 }

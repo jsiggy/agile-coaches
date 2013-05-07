@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2010 Sabre Holdings, Inc. All Rights Reserved.
  */
-package simpledesign.solid.liskovsubstitution;
+package simpledesign.solid.lsp;
 
 public class Rectangle {
    private long width;

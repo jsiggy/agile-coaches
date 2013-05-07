@@ -3,23 +3,24 @@
  *
  * Copyright (c) 2010 Sabre Holdings, Inc. All Rights Reserved.
  */
-package simpledesign.solid.liskovsubstitution;
+package simpledesign.solid.srp;
 
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import simpledesign.solid.Calculator;
 
+import static org.junit.Assert.*;
+
 @RunWith(MockitoJUnitRunner.class)
-public class AddingOnlyCalculatorTest {
+public class BasicCalculatorTest {
 
   private Calculator calculator;
 
   @Before
   public void setUp() throws Exception {
-    calculator = new AddingOnlyCalculator();
+    calculator = new BasicCalculator();
   }
 
   @Test
@@ -29,11 +30,6 @@ public class AddingOnlyCalculatorTest {
 
   @Test
   public void subtract() {
-     try{
-        calculator.subtract(8,2);
-        fail("Why would I throw an exception when the contract says subtract is supported.");
-     } catch(RuntimeException e) {
-        assertEquals("Ha, I fooled you...  You thought I would support subtraction, but you're wrong!  Ha, Ha, Ha", e.getMessage());
-     }
+    assertEquals(6, calculator.subtract(8, 2));
   }
 }

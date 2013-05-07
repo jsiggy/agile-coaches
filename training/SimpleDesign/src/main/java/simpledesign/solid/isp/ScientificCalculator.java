@@ -3,9 +3,7 @@
  *
  * Copyright (c) 2010 Sabre Holdings, Inc. All Rights Reserved.
  */
-package simpledesign.solid.interfacesegregation;
-
-import simpledesign.solid.Calculator;
+package simpledesign.solid.isp;
 
 public interface ScientificCalculator {
    long add(long firstNumber, long secondNumber);

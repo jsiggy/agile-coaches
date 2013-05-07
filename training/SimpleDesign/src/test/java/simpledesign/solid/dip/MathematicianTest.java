@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2010 Sabre Holdings, Inc. All Rights Reserved.
  */
-package simpledesign.solid.dependencyinjection;
+package simpledesign.solid.dip;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2010 Sabre Holdings, Inc. All Rights Reserved.
  */
-package simpledesign.solid.singleresponsibility;
+package simpledesign.solid.srp;
 
 import simpledesign.solid.Calculator;
 

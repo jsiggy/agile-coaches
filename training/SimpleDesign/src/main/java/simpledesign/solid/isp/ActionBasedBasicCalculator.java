@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2010 Sabre Holdings, Inc. All Rights Reserved.
  */
-package simpledesign.solid.interfacesegregation;
+package simpledesign.solid.isp;
 
 public class ActionBasedBasicCalculator implements ActionBasedCalculator {
 
