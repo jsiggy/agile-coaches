@@ -1,8 +1,3 @@
-/*
- * Example1
- *
- * Copyright (c) 2010 Sabre Holdings, Inc. All Rights Reserved.
- */
 package simpledesign.fixed;
 
 import java.sql.Connection;
