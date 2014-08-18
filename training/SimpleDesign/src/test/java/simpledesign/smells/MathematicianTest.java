@@ -1,6 +1,7 @@
 package simpledesign.smells;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -22,6 +23,7 @@ public class MathematicianTest {
    }
 
    @Test
+   @Ignore
    public void add() {
       when(calculator.add(3,4)).thenReturn(40l);
       when(calculator.subtract(40, 4)).thenReturn(235l);

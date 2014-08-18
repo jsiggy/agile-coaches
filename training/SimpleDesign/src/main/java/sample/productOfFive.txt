@@ -1,0 +1,5 @@
+Product of Five Largest
+
+Write a function to return the product of the 5 largest numbers contained in an array that is passed in.
+
+How do you know it?s correct?  What do your unit test cases look like?

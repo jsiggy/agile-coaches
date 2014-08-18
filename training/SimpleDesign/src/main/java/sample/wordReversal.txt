@@ -1,0 +1,24 @@
+Word Reversal
+
+Reverse each word of a passed in sentence without reversing the order of the words.
+
+Requirements
+- Method takes a String param as input
+- Method returns a String
+- The characters of each word contained in the input are to be reversed
+- The order of the words contained in the input remains unchanged
+
+Sample Data
+- Input Value:  ?This is a test?
+  Return Value: ?sihT si a tset?
+
+Input Parameter Rules
+- Always a string
+- Always an English sentence
+- Never contains punctuation
+- Always single spaced
+
+Bonus Points
+- TDD approach
+- Refactor
+- Code Review

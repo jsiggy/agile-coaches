@@ -1,0 +1,7 @@
+FizzBuzz
+
+Iterate over the numbers between 1 to 100.
+Each number should either have no output or have its output on a single line.
+If the number is a multiple of 3, print ?Biff?.
+If the number is a multiple of 5, print ?Bam?.
+If the number is a multiple of both 3 and 5, print ?BiffBam?.
