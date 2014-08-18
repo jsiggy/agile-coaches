@@ -47,7 +47,6 @@ public class ReverserTest {
 
       Reverser reverser = new Reverser();
       String result = reverser.reverse(stringToReverse);
-      System.out.println(result);
       assertEquals("0987654321zyxwvutsrqponmlkjihgfedcba", result);
    }
 }
