@@ -10,10 +10,14 @@ public class FlightBookingService {
     private FlightTicketingService flightTicketingService = new FlightTicketingService();
     private FlightSearchService flightSearchService = new FlightSearchService();
 
-    boolean bookFlight(int flightNumber, String departureAirport, String arrivalAirport, Date departureDate, UserDetails user, String creditCardNumber, String ccName, String ccExpiration) {
+    boolean bookFlight(int flightNumber, String departureAirport, String arrivalAirport, Date departureDate,
+                       UserDetails user, String creditCardNumber, String ccName, String ccExpiration) {
+
         if (flightNumber < 0) throw new IllegalArgumentException("Flight number must be > 0");
+
         if (creditCardNumber == null || ccExpiration == null || ccName == null)
             throw new IllegalArgumentException("Invalid credit card information");
+
         departureAirport = departureAirport.trim();
         arrivalAirport = arrivalAirport.trim();
         creditCardNumber = creditCardNumber.trim();
