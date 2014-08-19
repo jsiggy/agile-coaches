@@ -2,7 +2,9 @@ package simpledesign.smells;
 
 public class UserService {
     public UserDetails createUser(String first, String last) {
-       return new UserDetails(first, last);
+
+       UserDetails userDetails = new UserDetails(first, last);
+       return userDetails;
     }
 
     public boolean isValidUser(UserDetails userDetails) {
